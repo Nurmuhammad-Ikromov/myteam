@@ -563,15 +563,11 @@ img {
     position: absolute;
     display: block;
     width: 68%;
-    top: 0;
+    top: -100%;
     right: 0;
     z-index: 100;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    padding: 48px;
     padding-top: 112px;
-    padding-right: 48px;
-    padding-bottom: 100vh;
-    padding-left: 48px;
     background-color: #2C6269;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -588,8 +584,7 @@ img {
     content: "";
   }
   .navbar--open {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    top: 0;
     height: 100vh;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
