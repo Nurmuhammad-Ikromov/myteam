@@ -118,12 +118,13 @@
         position: absolute;
         display: block;
         width: 68%;
-        top: -100%;
+        top: 0;
         right: 0;
         z-index: 100;
         padding: 48px;
         padding-top: 112px;
         background-color: #2C6269;
+        transform: translateX(100%);
         transition: all 0.5s ease;
 
         &::after{
@@ -142,6 +143,7 @@
         &--open{
            top: 0;
            height: 100vh;
+           transform: translateX(0);
            transition: all 0.5s ease;
 
         }
