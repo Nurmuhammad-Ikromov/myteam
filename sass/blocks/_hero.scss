@@ -108,7 +108,7 @@
 }
 
 
-@media only screen and (max-width:768px){
+@include max-width(768px){
     .site__hero__inner{
         flex-direction: column;
         text-align: center;
@@ -139,11 +139,13 @@
 }
 
 
-@media only screen and (max-width:576px){
+@include max-width(576px){
     .site__hero__inner{
         flex-direction: column;
         text-align: center;
         padding-top: 48px;
+        padding-bottom: 197px;
+
     }
     
     .site__hero__info{
@@ -151,8 +153,8 @@
         max-width: 457px;
     }
     .site__title{
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 40px;
+        line-height: 40px;
         margin-bottom: 22px;
     }
     
@@ -160,23 +162,7 @@
 
 
 
-@media only screen and (max-width:400px){
-    .site__hero__inner{
-        flex-direction: column;
-        text-align: center;
-        padding-top: 48px;
-        padding-bottom: 197px;
-    }
-    
-    .site__title{
-        font-size: 40px;
-        line-height: 40px;
-        margin-bottom: 18px;
-    }
-    
-}
-
-@media only screen and (max-width:360px){
+@include max-width(360px){
     .site__hero__inner{
         flex-direction: column;
         text-align: center;
