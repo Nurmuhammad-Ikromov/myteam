@@ -2,8 +2,8 @@
     position: relative;
     background-color: #004047;
     background-image: url("../../images/success-bgi_1.svg"), url("../../images/success-bgi_3.png");
-    background-position: calc(50% - 690px) top, calc(50% + 660px) calc(50% + 374px);
-    background-size: 147px 100px, 200px 200px;
+    background-position: calc(50% - 690px) top, calc(50% + 660px) calc(50% + 324px);
+    background-size: 147px 100px, 200px 100px;
     background-repeat: no-repeat;
 
 }
@@ -16,6 +16,8 @@
     width: 100%;
     max-width: 932px;
     margin: 0 auto;
+    margin-bottom: 52px;
+
 }
 
 .success__title {
@@ -25,7 +27,6 @@
     text-align: center;
     color: #FFFFFF;
     margin: 0;
-    margin-bottom: 92px;
 }
 
 .success__title>span {
@@ -43,7 +44,20 @@
     max-width: 350px;
     text-align: center;
     margin: 0;
+    padding-top: 40px;
+
+    &:nth-child(2) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    background-image: url("../../images/success-bgi_2.svg");
+    background-size: 67px 56px;
+    background-repeat: no-repeat;
+    background-position: center 5px;
 }
+
+
 
 .success__quote {
     font-weight: 600;
@@ -70,5 +84,73 @@
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
+    margin: 0;
     margin-bottom: 32px;
+}
+
+@include max-width(1500px) {
+    .success {
+        background-image: url("../../images/success-bgi_1.svg"), url("../../images/success-bgi_3.png");
+        background-position: left top, right bottom;
+    }
+}
+
+@include max-width(900px) {
+    .success__inner {
+        padding: 120px 75px;
+    }
+
+    .success__list {
+        flex-direction: column;
+        max-width: 675px;
+    }
+
+    .success__item {
+        max-width: 675px;
+
+        &:nth-child(2) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        &+& {
+            margin-top: 84px;
+        }
+
+
+    }
+
+}
+
+@include max-width(800px) {
+    .success__inner {
+        padding: 120px 73px;
+    }
+
+    .success__item {
+        max-width: 573px;
+    }
+
+    .success__title-box {
+        margin-bottom: 84px;
+    }
+
+    .success__title {
+        margin-bottom: 0;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@include max-width(576px) {
+    .success__inner {
+        padding-top: 140px;
+        padding-right: 0;
+        padding-bottom: 164px;
+        padding-left: 0;
+    }
+
+    .success__quote {
+        margin-bottom: 16px;
+    }
 }
