@@ -1,15 +1,15 @@
-.site__header {
+.header {
     background-color:#014E56;
 }
-.site__header__inner {
+.header__inner {
     @include flex-starter;
     padding: 73px 0;
 }
-.site__logo-link {
+.logo-link {
     text-decoration: none;
     margin-right: 80px;
 }
-.site__logo-img {
+.logo-img {
     width: 100%;
     max-width: 160px;
     height: 100%;
@@ -81,35 +81,35 @@
 }
 
 @include max-width(768px){
-    .site__header__inner{
+    .header__inner{
         padding-top: 64px;
         padding-right: 20px;
         padding-bottom: 64px;
         padding-left: 20px;
     }
     
-    .site__logo-img{
+    .logo-img{
         width: 128px;
         height: 32px;
     }
     
-    .site__logo-link{
+    .logo-link{
         margin-right: 48px;
     }
 }
 
 
 @include max-width(576px){
-    .site__header__inner{
+    .header__inner{
         padding: 48px 0;
     }
     
-    .site__logo-img{
+    .logo-img{
         width: 128px;
         height: 32px;
     }
     
-    .site__logo-link{
+    .logo-link{
         margin-right: 0;
     }
     
