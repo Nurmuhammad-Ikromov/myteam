@@ -1,29 +1,10 @@
 .site__hero {
     position: relative;
     background-color: #014E56;
-    
-    &::before{
-        position: absolute;
-        top: 56px;
-        left: calc(50% - 760px);
-        width: 100px;
-        height: 200px;
-        background-image: url("../../images/hero-before.png");
-        background-size: 100px 200px;
-        content: ""
-    }
-
-    &::after{
-        position: absolute;
-        bottom: 0;
-        left: calc(50% + 200px);
-        width: 358px;
-        height: 100px;
-        background-image: url("../../images/hero-after.png");
-        background-size: 358px 100px;
-        content: ""
-    }
-    
+    background-image: url("../../images/hero-before.png");
+        background-size: 200px 200px;
+        background-position: calc(50% - 760px) 56px;
+        background-repeat: no-repeat;
     
 }
 
@@ -33,6 +14,11 @@
     justify-content: space-between;
     padding-top: 56px;
     padding-bottom: 250px;
+    
+    background-image: url("../../images/hero-after.png");
+    background-size: 358px 200px;
+    background-repeat: no-repeat;
+    background-position: right calc(50% + 255px);
     
     
 }
@@ -89,6 +75,7 @@
     .site__hero__inner{
         flex-direction: column;
         text-align: center;
+        background-position: right calc(50% + 305px);
     }
     .site__title{
         font-size: 75px;
@@ -113,6 +100,7 @@
         flex-direction: column;
         text-align: center;
         padding-top: 48px;
+        background-position: right calc(50% + 255px);
     }
     
     .site__hero__info{
@@ -145,6 +133,7 @@
         text-align: center;
         padding-top: 48px;
         padding-bottom: 197px;
+        background-position: center calc(50% + 215px);
 
     }
     
@@ -160,9 +149,32 @@
     
 }
 
+@include max-width(463.5px){
+    .site__hero{
+        background-image:none, url("../../images/hero-after.png");
+        background-repeat: no-repeat;
+        background-size: 358px 200px;
+        background-position: center calc(50% + 230px);
+        padding-bottom: 64px;
+    }
+    .site__hero__inner{
+        background-image: none;
+    }
+}
 
+@include max-width(369px){
+    .site__hero{
+        background-position: center calc(50% + 245px);
+    }
+    .site__hero__inner{
+        background: none;
+    }
+}
 
 @include max-width(360px){
+    .site__hero{
+        background-position: center calc(50% + 227px);
+    }
     .site__hero__inner{
         flex-direction: column;
         text-align: center;
