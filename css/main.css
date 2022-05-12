@@ -717,7 +717,8 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    background-position: right calc(50% + 305px);
+    background-image: url("../../images/hero-after.png");
+    background-position: center calc(50% + 305px);
   }
   .site__title {
     font-size: 75px;
@@ -743,7 +744,8 @@ img {
             flex-direction: column;
     text-align: center;
     padding-top: 48px;
-    background-position: right calc(50% + 255px);
+    background-image: none, url("../../images/hero-after.png");
+    background-position: center calc(50% + 257px);
   }
   .site__hero__info {
     width: 100%;
@@ -774,6 +776,8 @@ img {
     text-align: center;
     padding-top: 48px;
     padding-bottom: 197px;
+    background-image: none, url("../../images/hero-after.png");
+    background-size: 358px 200px;
     background-position: center calc(50% + 215px);
   }
   .site__hero__info {
@@ -790,9 +794,8 @@ img {
 @media only screen and (max-width: 463.5px) {
   .site__hero {
     background-image: none, url("../../images/hero-after.png");
-    background-repeat: no-repeat;
     background-size: 358px 200px;
-    background-position: center calc(50% + 230px);
+    background-position: center calc(50% + 262px);
     padding-bottom: 64px;
   }
   .site__hero__inner {
@@ -800,18 +803,15 @@ img {
   }
 }
 
-@media only screen and (max-width: 369px) {
+@media only screen and (max-width: 368.5px) {
   .site__hero {
-    background-position: center calc(50% + 245px);
-  }
-  .site__hero__inner {
-    background: none;
+    background-position: center calc(50% + 275px);
   }
 }
 
 @media only screen and (max-width: 360px) {
   .site__hero {
-    background-position: center calc(50% + 227px);
+    background-position: center calc(50% + 257px);
   }
   .site__hero__inner {
     -webkit-box-orient: vertical;
