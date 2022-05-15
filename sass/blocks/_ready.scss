@@ -1,0 +1,82 @@
+.ready {
+    background-color: #F67E7E;
+    background-image: url("../../images/ready-bgi.png");
+    background-size: 200px 144px;
+    background-position: calc(50% - 660px) bottom;
+    background-repeat: no-repeat;
+
+}
+
+.container {}
+
+.ready__inner {
+    @include flex-starter;
+    justify-content: space-between;
+    width: 100%;
+    padding: 76px 100px;
+}
+
+.ready__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #012F34;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.ready__link {
+    display: inline-block;
+    min-width: 153px;
+    padding: 7px 20px 9px;
+    text-align: center;
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #012F34;
+    text-decoration: none;
+}
+
+.ready__link:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #012F34;
+}
+
+@include max-width(1500px)
+{
+    .ready{
+        background-position: left bottom;
+    }
+}
+
+@include max-width(960px)
+{   
+    .ready{
+        background-position: left  bottom -22px;
+    }
+    .ready__inner{
+        padding: 76px;
+        
+    }
+    .ready__title{
+        font-size: 32px;
+        line-height: 32px;
+
+    }
+}
+
+@include max-width(710px)
+{
+    .ready__inner{
+        flex-direction: column;
+        padding: 83px 0;
+        text-align: center;
+    }
+    .ready__title{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
