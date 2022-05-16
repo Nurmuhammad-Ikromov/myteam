@@ -1573,8 +1573,7 @@ img {
   display: inline-block;
   margin: 0 auto;
   width: 56px;
-  height: 56px;
-  padding: 20px;
+  padding: 18px;
   background-color: #F67E7E;
   border-radius: 50%;
   text-align: center;
@@ -1586,6 +1585,8 @@ img {
 
 .directors__span-img {
   display: inline-block;
+  width: 16px;
+  height: 16px;
 }
 
 .directors__item-hidden {
