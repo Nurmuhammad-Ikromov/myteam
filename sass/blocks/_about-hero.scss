@@ -30,37 +30,48 @@
     max-width: 730px;
 }
 
-.about__span{
+.about__span {
     background-color: #F67E7E;
     margin-bottom: 40px;
 }
+
 .hero__text--about {
     width: 100%;
     max-width: 730px;
 }
-@include max-width(1520px)
-{
-    .about-hero{
+
+@include max-width(1520px) {
+    .about-hero {
         background-position: right -100px bottom;
     }
 }
-@include max-width(768px)
-{
-    .about-hero__inner{
+
+@include max-width(768px) {
+    .about-hero__inner {
         flex-direction: column;
         text-align: center;
-        padding-right:  20px;
+        padding-right: 20px;
         padding-left: 20px;
     }
 
-    .hero__title--about{
+    .hero__title--about {
         margin: 0 auto;
     }
 }
 
-@include max-width(450px){
-    .about-hero{
-       
+@include max-width(450px) {
+    .about-hero {
+
         background-position: right -100px bottom -100px;
+    }
+
+    .about-hero__title--about {
+        font-size: 64px;
+        line-height: 100px;
+    }
+
+    .about-hero__text--about{
+        font-size: 15px;
+        line-height: 25px;
     }
 }

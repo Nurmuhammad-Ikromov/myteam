@@ -1462,6 +1462,14 @@ img {
   .about-hero {
     background-position: right -100px bottom -100px;
   }
+  .about-hero__title--about {
+    font-size: 64px;
+    line-height: 100px;
+  }
+  .about-hero__text--about {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .directors {
@@ -1580,6 +1588,10 @@ img {
   display: inline-block;
 }
 
+.directors__item-hidden {
+  display: none;
+}
+
 @media only screen and (max-width: 1520px) {
   .directors {
     background-position: left -100px top, right bottom;
@@ -1648,6 +1660,99 @@ img {
   }
   .directors__item:nth-child(1), .directors__item:nth-child(2), .directors__item:nth-child(3), .directors__item:nth-child(4) {
     margin-bottom: 0;
+  }
+}
+
+.client {
+  background-color: #012F34;
+  background-image: url("../../images/client-bgi.png");
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  background-position: top left;
+}
+
+.client__inner {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.client__title {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 70px;
+}
+
+.client__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 665px) {
+  .client__img {
+    max-width: 114px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .client {
+    background-position: top -100px left;
+  }
+  .client__inner {
+    padding: 100px 0;
+  }
+  .client__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 52px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .client__title {
+    margin-bottom: 65px;
+  }
+  .client__img-box {
+    display: block;
+    text-align: center;
+  }
+  .client__img + .client__img {
+    margin-left: auto;
+    margin-top: 57px;
+  }
+  .client__img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .client {
+    background-position: top -100px left -100px;
+  }
+  .client__inner {
+    padding: 88px 0;
+  }
+  .client__img {
+    max-width: 162px;
+  }
+  .client__img:nth-child(1), .client__img:nth-child(4) {
+    max-width: 147px;
+  }
+  .client__img:nth-child(5) {
+    max-width: 87px;
   }
 }
 
